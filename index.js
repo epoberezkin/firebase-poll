@@ -6,7 +6,7 @@ var form = document.getElementById('questions');
 form.onsubmit = function(e) {
     e.preventDefault();
     var data = getData();
-    var dataRef = new Firebase('https://incandescent-fire-6958.firebaseio.com/answers');
+    var dataRef = new Firebase('https://gempoll.firebaseio.com/answers');
     dataRef.push(data, function() {
         window.alert('Form submitted');
     });

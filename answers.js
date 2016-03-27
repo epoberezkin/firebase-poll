@@ -4,7 +4,7 @@
 var templateRow = document.getElementById('template');
 var tableBody = document.getElementById('tableBody');
 
-var dataRef = new Firebase('https://incandescent-fire-6958.firebaseio.com/answers');
+var dataRef = new Firebase('https://gempoll.firebaseio.com/answers');
 dataRef.on('child_added', function (snapshot) {
     var item = snapshot.val();
     console.log(item);
